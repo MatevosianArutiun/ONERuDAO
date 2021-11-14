@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // scroll-behavior: smooth;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  .svg {
+    display: none;
+  }
+  .fullpage {
+    display: none;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    @media screen and (min-width: $screen-desktop) {
+      padding-left: 20px;
+      padding-right: 50px;
+    }
+  }
+  .container--content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    @media screen and (min-width: $screen-desktop) {
+      padding-left: 10%;
+      padding-right: 50px;
+    }
+  }
+  

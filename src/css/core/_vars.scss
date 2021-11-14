@@ -1,0 +1,45 @@
+// Colors
+$white: #ffffff;
+$black: #161616;
+$line: #BABDC4;
+$line-progress: #F5F5F5;
+$title-color: #515769;
+$menu-text-color: #A6A7AA;
+$text-color: #A6A7AA;
+$turquoise: #17BED2;
+$background-color: #FAFAFA;
+$background-wrapper: #333;
+
+
+
+// Fonts
+$main-font: "Hind", sans-serif;
+
+
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+$H900: calcRem(90px);
+$H800: calcRem(75px);
+$H700: calcRem(30px);
+$H600: calcRem(30px);
+$H500: calcRem(24px);
+$H400: calcRem(22px);
+$H300: calcRem(20px);
+$H200: calcRem(17px);
+$H100: calcRem(16px);
+$H50: calcRem(14px);
+$H10: calcRem(13px);
+
+$screen-iphone: 376px;
+$screen-iphone-plus: 451px;
+$screen-tablet-small: 600px;
+$screen-tablet-small: 500px;
+$screen-tablet: 769px;
+$screen-desktop: 1024px;
+$screen-desktop-large: 1300px;
+$screen-hd: 1400px;
+$screen-fullhd: 1500px;
+$screen-retina: 1660px;
