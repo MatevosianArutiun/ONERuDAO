@@ -1,19 +1,14 @@
 // Colors
 $white: #ffffff;
-$black: #161616;
-$line: #BABDC4;
-$line-progress: #F5F5F5;
-$title-color: #515769;
-$menu-text-color: #A6A7AA;
-$text-color: #A6A7AA;
-$turquoise: #17BED2;
-$background-color: #FAFAFA;
-$background-wrapper: #333;
-
-
+$black: hsl(0, 0%, 9%);
+$electric-blue: #00AEE9;
+$mint-green: #69FABD;
+$midnight-blue: #1B295E;
+$cool-gray:#758796;
 
 // Fonts
-$main-font: "Hind", sans-serif;
+$main-font: 'Nunito', sans-serif;
+$text-font: 'Fira Sans', sans-serif;
 
 
 @function calcRem($size) {

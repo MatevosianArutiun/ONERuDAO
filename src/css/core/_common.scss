@@ -4,6 +4,9 @@
     box-sizing: border-box;
     // scroll-behavior: smooth;
   }
+  body {
+    padding-top: 10vh;
+  }
   a {
     text-decoration: none;
   }
@@ -19,13 +22,13 @@
     display: none;
   }
   .container {
-    max-width: 1200px;
+    // max-width: 1200px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
     @media screen and (min-width: $screen-desktop) {
-      padding-left: 20px;
-      padding-right: 50px;
+      padding-left: 100px;
+      padding-right: 100px;
     }
   }
   .container--content {

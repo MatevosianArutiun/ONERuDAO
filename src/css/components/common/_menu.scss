@@ -1,0 +1,25 @@
+.menu {
+    &__list {
+        @include flex(space-between, center, row);
+    }
+    &__item:not(:last-child) {
+        margin-right: 30px;
+      }
+      &__link {
+          font-family: $main-font;
+          text-transform: uppercase;
+          @include text($H50, 700, $white);
+      }
+      &__link::after {
+        display: block;
+        content: "";
+        height: 2px;
+        width: 0%;
+        background-color: $mint-green;
+        transition: width 0.2s ease-in-out;
+      }
+      &__link:hover:before,
+      &__link:hover::after {
+        width: 100%;
+      }
+}

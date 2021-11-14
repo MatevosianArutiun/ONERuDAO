@@ -1,0 +1,13 @@
+.logo {
+    cursor: pointer;
+    @include flex(center, flex-end, row);
+    &__image {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    &__title {
+        font-family: $main-font;
+        @include text($H400, 700, $white);
+    }
+}
