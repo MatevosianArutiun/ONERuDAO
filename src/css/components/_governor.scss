@@ -1,0 +1,30 @@
+.section-governor {
+    height: 90vh;
+    background-image: url(../images/governor_fon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-attachment: fixed;
+    // background-position: right;
+    &__container {
+        padding-top: 50px;
+        @include flex(center, center, column);
+    }
+    &__title {
+          position: relative;
+          font-family: $main-font;
+          letter-spacing: 5px;
+          text-transform: uppercase;
+          @include text($H700, 600, $midnight-blue);
+          line-height: 1.8;
+          &::after {
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            display: block;
+            content: "";
+            height: 3px;
+            width: 50%;
+            background-image: linear-gradient(90deg, rgba(105,250,189,1) 35%, rgba(0,174,233,1) 100%);
+          }
+    }
+}
