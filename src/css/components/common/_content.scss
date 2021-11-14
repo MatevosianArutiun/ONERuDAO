@@ -1,0 +1,27 @@
+.content {
+    @include flex(space-between, flex-start, row);
+    &__aside-left {
+        @include flex(flex-start, center, column);
+        margin-right: 100px;
+        width: 50%;
+    }
+    &__aside-right {
+        @include flex(flex-start, center, column);
+        width: 50%;
+    }
+    &__title {
+        font-family: $main-font;
+        @include text($H500, 700, $black);
+        margin-bottom: 50px;
+    }
+    &__text {
+        font-family: $text-font;
+        @include text($H200, 400, $cool-gray);
+        line-height: 2;
+    }
+    &__link {
+        @include text($H200, 900, $electric-blue);
+        background: white;
+    }
+   
+}

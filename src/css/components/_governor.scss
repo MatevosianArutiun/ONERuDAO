@@ -16,6 +16,7 @@
           text-transform: uppercase;
           @include text($H700, 600, $midnight-blue);
           line-height: 1.8;
+          margin-bottom: 100px;
           &::after {
             position: absolute;
             bottom: 0;
