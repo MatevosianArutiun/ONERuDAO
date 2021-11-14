@@ -11,7 +11,7 @@
     }
     &__title {
         font-family: $main-font;
-        @include text($H500, 700, $black);
+        @include text($H500, 700, $midnight-blue);
         margin-bottom: 50px;
     }
     &__text {
