@@ -9,6 +9,10 @@
           font-family: $main-font;
           text-transform: uppercase;
           @include text($H50, 700, $white);
+          transition: all 0.2s linear;
+          &:hover {
+            opacity: 0.8;
+          }
       }
       &__link::after {
         display: block;
