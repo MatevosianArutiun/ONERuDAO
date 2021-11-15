@@ -4626,13 +4626,13 @@ ul.uk-nav-sub {
  */
 .uk-slidenav {
   padding: 5px 10px;
-  color: rgba(102, 102, 102, 0.5);
+  color: #1B295E;
   transition: color 0.1s ease-in-out;
 }
 /* Hover + Focus */
 .uk-slidenav:hover,
 .uk-slidenav:focus {
-  color: rgba(102, 102, 102, 0.9);
+  color:#1B295E ;
   outline: none;
 }
 /* OnClick */

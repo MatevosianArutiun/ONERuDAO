@@ -7,6 +7,26 @@
   &__item {
     height: 100vh;
   }
+  &__content-wrapper {
+     width: 80%;
+  }
+  &__title {
+    @include text($H300, 700, $midnight-blue);
+    text-align: center;
+    margin-bottom: 20px !important;
+    @media screen and (min-width: $screen-tablet) {
+      @include text($H600, 700, $midnight-blue);
+      margin-bottom: 50px !important;
+    }
+  }
+  &__text {
+    @include text($H10, 800, $midnight-blue);
+    text-align: center;
+    @media screen and (min-width: $screen-tablet) {
+      @include text($H200, 800, $midnight-blue);
+    }
+  }
+  
   
 //   background-image: url(../images/header_fon_1.png);
 //   background-repeat: no-repeat;
