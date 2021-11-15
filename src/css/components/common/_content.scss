@@ -1,9 +1,17 @@
 .content {
-    @include flex(space-between, flex-start, row);
+        @include flex(center, center, column);
+    @media screen and (min-width: $screen-desktop) {
+        @include flex(space-between, flex-start, row);
+      }
+    
     &__aside-left {
         @include flex(flex-start, center, column);
-        margin-right: 100px;
         width: 50%;
+        margin-bottom: 50px;
+        @media screen and (min-width: $screen-desktop) {
+            margin-bottom: 0px;
+            margin-right: 100px;
+          }
     }
     &__aside-right {
         @include flex(flex-start, center, column);
@@ -13,11 +21,19 @@
         font-family: $main-font;
         @include text($H500, 700, $midnight-blue);
         margin-bottom: 50px;
+        text-align: center;
+        @media screen and (min-width: $screen-desktop) {
+            text-align: left;
+          }
     }
     &__text {
         font-family: $text-font;
         @include text($H200, 400, $cool-gray);
         line-height: 2;
+        text-align: center;
+        @media screen and (min-width: $screen-desktop) {
+            text-align: left;
+          }
     }
     &__link {
         @include text($H200, 900, $electric-blue);

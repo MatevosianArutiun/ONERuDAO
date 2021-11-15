@@ -1,6 +1,11 @@
 .menu {
     &__list {
+      display: none;
+      @media screen and (min-width: $screen-desktop) {
         @include flex(space-between, center, row);
+      }
+        
+        
     }
     &__item:not(:last-child) {
         margin-right: 30px;
