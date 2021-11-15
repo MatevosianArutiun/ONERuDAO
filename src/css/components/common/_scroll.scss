@@ -4,10 +4,10 @@
     left: 0; 
     right: 0; 
     margin: 0 auto;
-    display: block;
+    display: none;
     width: 24px;
     transition: all .3s linear;
-    @media screen and (min-width: $screen-tablet) {
+    @media screen and (min-width: $screen-desktop-large) {
         animation-duration: 1.5s;
         animation-iteration-count: infinite;
         animation-name: bounce-1;
