@@ -8,6 +8,7 @@
     width: 24px;
     transition: all .3s linear;
     @media screen and (min-width: $screen-desktop-large) {
+        display: block;
         animation-duration: 1.5s;
         animation-iteration-count: infinite;
         animation-name: bounce-1;
