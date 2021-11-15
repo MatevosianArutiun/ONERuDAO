@@ -6,16 +6,20 @@
     
     &__aside-left {
         @include flex(flex-start, center, column);
-        width: 50%;
+        width: 100%;
         margin-bottom: 50px;
         @media screen and (min-width: $screen-desktop) {
             margin-bottom: 0px;
             margin-right: 100px;
+            width: 50%;
           }
     }
     &__aside-right {
         @include flex(flex-start, center, column);
-        width: 50%;
+        width: 100%;
+        @media screen and (min-width: $screen-desktop) {
+            width: 50%;
+          }
     }
     &__title {
         font-family: $main-font;
