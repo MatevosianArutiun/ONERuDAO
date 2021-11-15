@@ -20,7 +20,7 @@
     }
   }
   &__text {
-    @include text($H10, 800, $midnight-blue);
+    @include text($H100, 800, $midnight-blue);
     text-align: center;
     @media screen and (min-width: $screen-tablet) {
       @include text($H200, 800, $midnight-blue);

@@ -33,7 +33,7 @@
     &__text {
         font-family: $text-font;
         @include text($H200, 400, $cool-gray);
-        line-height: 1.2;
+        line-height: 1.4;
         text-align: center;
         @media screen and (min-width: $screen-desktop) {
             text-align: left;
