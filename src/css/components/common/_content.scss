@@ -39,6 +39,9 @@
             text-align: left;
           }
     }
+    &__list {
+        @include flex(center, center, column);
+    }
     &__link {
         @include text($H200, 900, $electric-blue);
         background: white;
