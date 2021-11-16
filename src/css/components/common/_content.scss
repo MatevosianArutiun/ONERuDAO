@@ -1,7 +1,8 @@
 .content {
+        margin-bottom: 50px;
         @include flex(center, center, column);
-    @media screen and (min-width: $screen-desktop) {
-        @include flex(space-between, flex-start, row);
+        @media screen and (min-width: $screen-desktop) {
+           @include flex(space-between, flex-start, row);
       }
     
     &__aside-left {
@@ -23,7 +24,7 @@
     }
     &__title {
         font-family: $main-font;
-        @include text($H500, 700, $midnight-blue);
+        @include text($H400, 700, $midnight-blue);
         margin-bottom: 50px;
         text-align: center;
         @media screen and (min-width: $screen-desktop) {
@@ -32,7 +33,7 @@
     }
     &__text {
         font-family: $text-font;
-        @include text($H200, 400, $cool-gray);
+        @include text($H100, 400, $cool-gray);
         line-height: 1.2;
         text-align: center;
         @media screen and (min-width: $screen-desktop) {

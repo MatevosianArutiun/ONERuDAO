@@ -1,5 +1,6 @@
 .section-governor {
-    height: 90vh;
+    // height: 90vh;
+    padding-bottom: 50px;
     background-image: url(../images/governor_fon.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,14 +13,13 @@
     &__title {
           position: relative;
           font-family: $main-font;
-          letter-spacing: 5px;
           text-transform: uppercase;
-          @include text($H700, 600, $midnight-blue);
-          line-height: 1.8;
+          @include text($H700, 700, $midnight-blue);
+          line-height: 1.6;
           margin-bottom: 100px;
           &::after {
             position: absolute;
-            bottom: 0;
+            bottom: -20px;
             left: 25%;
             display: block;
             content: "";
