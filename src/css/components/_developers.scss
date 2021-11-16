@@ -12,10 +12,9 @@
         text-transform: uppercase;
         @include text($H500, 700, $white);
         line-height: 1.3;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         @media screen and (min-width: $screen-tablet) {
           @include text($H700, 600, $white);
-          margin-bottom: 50px;
         }
         &::after {
           position: absolute;

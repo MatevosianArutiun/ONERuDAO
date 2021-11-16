@@ -14,9 +14,12 @@
           position: relative;
           font-family: $main-font;
           text-transform: uppercase;
-          @include text($H700, 700, $midnight-blue);
+          @include text($H500, 700, $midnight-blue);
           line-height: 1.6;
-          margin-bottom: 100px;
+          margin-bottom: 50px;
+          @media screen and (min-width: $screen-tablet) {
+            @include text($H700, 600, $midnight-blue);
+          }
           &::after {
             position: absolute;
             bottom: -20px;
