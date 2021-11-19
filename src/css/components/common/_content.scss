@@ -1,5 +1,5 @@
 .content {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         @include flex(center, center, column);
         @media screen and (min-width: $screen-desktop) {
            @include flex(space-between, flex-start, row);
@@ -31,6 +31,9 @@
             text-align: left;
           }
     }
+    &__text:last-of-type {
+        margin-bottom: 20px;
+    }
     &__text {
         font-family: $text-font;
         @include text($H100, 400, $cool-gray);
@@ -45,6 +48,7 @@
         @include flex(center, center, column);
     }
     &__link {
+        font-family: $text-font;
         @include text($H200, 900, $electric-blue);
         background: white;
         transition: all 0.2s linear;
