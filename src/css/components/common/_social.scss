@@ -1,0 +1,67 @@
+.social {
+    @include flex(center, center, column);
+    &__list {
+            @include flex(center, center, column);
+        @media screen and (min-width: $screen-desktop) {
+            @include flex(space-between, flex-start, row);
+          }
+    }
+    &__item:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 50px;
+        @media screen and (min-width: $screen-desktop) {
+            margin-right: 50px;
+            margin-bottom: 0px;
+          }
+    }
+    &__item {
+        @include flex(center, center, column);
+        width: 100%;
+        @media screen and (min-width: $screen-desktop) {
+            width: 25%;
+          }
+    }
+    &__title {
+        @include text($H400, 600, $white);
+        font-family: $main-font;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+    &__image {
+        margin-bottom: 30px;
+        width: 150px;
+    }
+    &__list-icon {
+        @include flex(space-between, center, row);
+        margin-bottom: 30px;
+    }
+    &__item-icon:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__text:last-of-type {
+        margin-bottom: 20px;
+    }
+    &__text {
+        text-align: center;
+        font-family: $text-font;
+        @include text($H50, 400, $white);
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 1px;
+        @media screen and (min-width: $screen-desktop) {
+            line-height: 1.8;
+          }
+    }
+    &__icon {
+        width: 25px;
+        height: 25px;
+        fill: $white;
+        transition: all 0.2s linear;
+        &:hover {
+            fill: $mint-green;
+        }
+    }
+    
+
+}
