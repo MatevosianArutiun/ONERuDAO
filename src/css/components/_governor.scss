@@ -4,7 +4,6 @@
     background-image: url(../images/governor_fon.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     &__container {
         padding-top: 100px;
         @include flex(center, center, column);
