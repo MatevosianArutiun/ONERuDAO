@@ -8,15 +8,15 @@
         transition: all 0.2s linear;
         &:hover {
             
-            // animation:move 3s linear infinite;
-            // @keyframes move{
-            //     from {
-            //       transform:rotate3d(1,-1,0,0);
-            //     }
-            //     to {
-            //       transform:rotate3d(1,-5,0,360deg);
-            //     }
-            //   }
+            animation:move 3s linear infinite;
+            @keyframes move{
+                from {
+                  transform:rotate3d(1,-1,0,0);
+                }
+                to {
+                  transform:rotate3d(1,-5,0,360deg);
+                }
+              }
         }
     }
     &__title {
