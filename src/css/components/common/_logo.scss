@@ -23,6 +23,7 @@
         font-family: $main-font;
         @include text($H400, 700, $white);
         transition: all 0.2s linear;
+        @include text($H400, 700, $mint-green);
         &:hover {
             @include text($H400, 700, $mint-green);
         }
