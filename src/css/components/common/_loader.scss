@@ -17,9 +17,9 @@
     margin: 0 auto;
     margin-top: 49px;
     position: relative;
+    animation:move 3s linear infinite;
   }
   &__image {
-    animation:move 3s linear infinite;
             @keyframes move{
                 from {
                   transform:rotate3d(1,-1,0,0);
