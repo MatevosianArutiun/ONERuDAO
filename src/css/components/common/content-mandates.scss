@@ -1,7 +1,7 @@
 .content-mandates {
     &__inner {
         @include flex(center, center, column);
-        margin-bottom: 200px;
+        margin-bottom: 100px;
     }
     &__title {
         font-family: $main-font;
