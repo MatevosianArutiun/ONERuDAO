@@ -48,5 +48,12 @@
             text-align: left;
           }
     }
+    &__icon {
+        cursor: pointer;
+        fill: $midnight-blue;
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
     
 }
