@@ -1,0 +1,27 @@
+.title {
+    position: relative;
+    font-family: $main-font;
+    text-transform: uppercase;
+    @include text($H500, 700, $midnight-blue);
+    line-height: 1.6;
+    margin-bottom: 100px;
+    @media screen and (min-width: $screen-tablet) {
+      @include text($H700, 600, $midnight-blue);
+    }
+    &::after {
+      position: absolute;
+      bottom: -20px;
+      left: 25%;
+      display: block;
+      content: "";
+      height: 3px;
+      width: 50%;
+      background-image: linear-gradient(90deg, rgba(105,250,189,1) 35%, rgba(0,174,233,1) 100%);
+    }
+    &--white {
+        @include text($H300, 700, $white);
+        @media screen and (min-width: $screen-tablet) {
+          @include text($H700, 600, $white);
+        }
+    }
+}
