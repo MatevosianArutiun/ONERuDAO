@@ -1,0 +1,8 @@
+.section-roadmap {
+    height: 100vh;
+    padding-top: 50px;
+    background-color: $midnight-blue;
+    &__container {
+        @include flex(center, center, column);
+    }
+}
