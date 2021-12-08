@@ -4,7 +4,7 @@
     text-transform: uppercase;
     @include text($H500, 700, $midnight-blue);
     line-height: 1.6;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     @media screen and (min-width: $screen-tablet) {
       @include text($H700, 600, $midnight-blue);
     }
