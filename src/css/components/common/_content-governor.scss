@@ -15,7 +15,7 @@
       }
 }
 &__aside-right {
-    @include flex(flex-start, center, column);
+    @include flex(center, center, column);
     width: 100%;
     @media screen and (min-width: $screen-desktop) {
         width: 50%;
@@ -42,8 +42,12 @@
 &__list {
     @include flex(center, center, column);
 }
+&__item {
+    @include flex(center, center, column);
+}
 &__link {
     font-family: $text-font;
+    text-align: center;
     @include text($H200, 900, $electric-blue);
     background: white;
     transition: all 0.2s linear;
