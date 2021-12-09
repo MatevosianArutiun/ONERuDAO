@@ -1,0 +1,28 @@
+.section-grants {
+    padding-bottom: 50px;
+    padding-top: 100px;
+    background-image: url(../images/governor_fon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__container {
+        @include flex(center, center, column);
+    }
+    &__title {
+        margin-bottom: 70px;
+    }
+    &__text {
+        font-family: $text-font;
+        line-height: 2;
+        @include text($H200, 400, $cool-gray);
+        text-align: center;
+        margin-bottom: 70px;
+        @media screen and (min-width: $screen-desktop) {
+            width: 70%;
+          }
+    }
+    &__qr {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 100px;
+    }
+}
