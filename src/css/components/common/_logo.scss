@@ -1,10 +1,10 @@
 .logo {
     cursor: pointer;
     @include flex(center, flex-end, row);
-    // display: none;
-    // @media screen and (min-width: $screen-tablet-small) {
-    //     @include flex(center, flex-end, row);
-    //   }
+    display: none;
+    @media screen and (min-width: $screen-tablet-small) {
+        @include flex(center, flex-end, row);
+      }
     &__image {
         width: 20px;
         height: 20px;
