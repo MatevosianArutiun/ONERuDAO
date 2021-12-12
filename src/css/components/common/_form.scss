@@ -10,13 +10,13 @@
         border-radius: 5px 0 0 5px;
         padding: 10px;
         width: 60%;
-        height: 30px;
+        height: 50px;
         border: 2px solid $bg-input;
         background-color: $bg-input;
         transition: all 0.3s linear;
-        @media screen and (min-width: $screen-tablet-small) {
-            height: 50px;
-          }
+        // @media screen and (min-width: $screen-tablet-small) {
+        //     height: 50px;
+        //   }
         @media screen and (min-width: $screen-desktop) {
             width: 80%;
           }
@@ -47,11 +47,11 @@
         cursor: pointer;
         border: none;
         width: 40%;
-        height: 30px;
+        height: 50px;
         display: block;
-        @media screen and (min-width: $screen-tablet-small) {
-            height: 50px;
-          }
+        // @media screen and (min-width: $screen-tablet-small) {
+        //     height: 50px;
+        //   }
         @media screen and (min-width: $screen-desktop) {
             @include text($H100, 600, $midnight-blue);
             width: 20%;
