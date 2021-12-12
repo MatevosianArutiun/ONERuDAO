@@ -1,12 +1,12 @@
 .form {
     @include flex(center, center, row);
-    width: 70vw;
+    width: 90vw;
     @media screen and (min-width: $screen-desktop-large) {
         width: 40vw;
       }
     &__input {
         outline: none;
-        @include text($H200, 400, $cool-gray);
+        @include text($H100, 400, $cool-gray);
         border-radius: 5px 0 0 5px;
         padding: 10px;
         width: 60%;
@@ -22,10 +22,8 @@
           }
     }
     &__input::placeholder {
-        @include text($H5, 400, $cool-gray);
-        @media screen and (min-width: $screen-desktop) {
-            @include text($H50, 400, $cool-gray);
-          }
+        @include text($H100, 400, $cool-gray);
+        
       }
       &__input:focus {
         border: 2px solid $electric-blue;
@@ -41,7 +39,7 @@
       }
     &__button {
         background-image: linear-gradient(45deg, rgba(0,174,233,1) 0%, rgba(105,250,189,1) 35%, rgba(27,41,94,1) 100%);
-        @include text($H50, 600, $midnight-blue);
+        @include text($H200, 600, $midnight-blue);
         font-family: $main-font;
         border-radius: 0 5px 5px 0;
         cursor: pointer;
@@ -53,11 +51,11 @@
         //     height: 50px;
         //   }
         @media screen and (min-width: $screen-desktop) {
-            @include text($H100, 600, $midnight-blue);
+            // @include text($H200, 600, $midnight-blue);
             width: 20%;
           }
-        @media screen and (min-width: $screen-desktop-large) {
-            @include text($H200, 600, $midnight-blue);
-          }
+        // @media screen and (min-width: $screen-desktop-large) {
+        //     @include text($H200, 600, $midnight-blue);
+        //   }
     }
 }
