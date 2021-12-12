@@ -1,0 +1,10 @@
+.contacts {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    // background-image: url(../images/governor_fon.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    &__container {
+        @include flex(center, center, column);
+    }
+}
