@@ -1,7 +1,11 @@
 .menu {
+      display: none;
+      @media screen and (min-width: $screen-desktop-large) {
+       display: block;
+      }
     &__list {
       display: none;
-      @media screen and (min-width: $screen-desktop) {
+      @media screen and (min-width: $screen-desktop-average) {
         @include flex(space-between, center, row);
       }
         

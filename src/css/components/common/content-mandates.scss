@@ -1,7 +1,7 @@
 .content-mandates {
     &__inner {
         @include flex(center, center, column);
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     &__title {
         font-family: $main-font;
@@ -42,13 +42,15 @@
     &__subtitle {
         font-family: $main-font;
         @include text($H400, 700, $midnight-blue);
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: center;
         @media screen and (min-width: $screen-desktop) {
             text-align: left;
           }
     }
     &__icon {
+        border: 1px solid $midnight-blue;
+        border-radius: 50%;
         cursor: pointer;
         fill: $midnight-blue;
         width: 70px;

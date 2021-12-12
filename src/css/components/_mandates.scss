@@ -7,4 +7,7 @@
     &__container {
         @include flex(center, center, column);
     }
+    &__title {
+        margin-bottom: 70px;
+    }
 }

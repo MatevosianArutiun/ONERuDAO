@@ -4,7 +4,10 @@
         margin-bottom: 30px;
     }
     &__item:not(:last-child) {
-        margin-right: 30px;
+        margin-right: 15px;
+        @media screen and (min-width: $screen-iphone-plus) {
+            margin-right: 30px;
+          }
     }
     &__icon {
         width: 25px;

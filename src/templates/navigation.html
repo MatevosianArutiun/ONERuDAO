@@ -8,6 +8,7 @@
         </div>
 
 
+
         <div class="navigation__menu menu">
             <ul class="menu__list">
                 <li class="menu__item">
@@ -30,6 +31,80 @@
                 </li>
             </ul>
         </div>
+
+
+        <nav class="navigation__navbar uk-navbar uk-navbar-container uk-margin" uk-toggle="target: #offcanvas-flip">
+            <div class="uk-navbar-left">
+                <a class="navigation__link uk-navbar-toggle" href="#">
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                </a>
+            </div>
+        </nav>
+
+
+
+        <div class="navigation__burger-menu burger-menu" id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+            <div class="burger-menu__inner uk-offcanvas-bar">
+
+                <button class="burger-menu__btn uk-offcanvas-close" type="button" uk-close></button>
+
+                <div class="burger-menu__menu menu">
+                    <ul class="burger-menu__list">
+                        <li class="burger-menu__item">
+                            <a href="#header" class="menu__link">О Нас</a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a href="#governor" class="menu__link">Гавернеры</a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a href="#mandates" class="menu__link">Мандаты</a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a href="#grants" class="menu__link">Гранты</a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a href="#works" class="menu__link">О Проекте</a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a href="#contacts" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <ul class="social__list navigation__list">
+            <li class="social__item">
+                <a href="" class="social__link uk-animation-toggle">
+                    <svg class="social__icon">
+                        <use class="social__use" xlink:href="#twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="" class="social__link uk-animation-toggle">
+                    <svg class="social__icon">
+                        <use class="social__use" xlink:href="#telegram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="" class="social__link uk-animation-toggle">
+                    <svg class="social__icon">
+                        <use class="social__use" xlink:href="#youtube"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="" class="social__link uk-animation-toggle">
+                    <svg class="social__icon">
+                        <use class="social__use" xlink:href="#instagram"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
 
     </div>
 </nav>
