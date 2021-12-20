@@ -1,26 +1,31 @@
 .content-mandates {
     &__inner {
         @include flex(center, center, column);
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     &__title {
+        margin-bottom: 30px;
         font-family: $main-font;
-        @include text($H500, 700, $midnight-blue);
-        margin-bottom: 50px;
-        text-align: center;
+        letter-spacing: 0.32px;
+        @include text($H300, 700, $black);
+
     }
     &__text {
-        font-family: $text-font;
-        @include text($H100, 400, $cool-gray);
-        line-height: 1.2;
         text-align: center;
-        @media screen and (min-width: $screen-desktop) {
-            line-height: 2;
+        font-family: $main-font;
+        letter-spacing: 0.32px;
+        line-height: 20px;
+        @include text($H100, 400, $cool-gray);
+        @media screen and (min-width: $screen-desktop-large) {
+            text-align: left;
+          }
+          &--left {
+            text-align: left;
           }
     }
     &__list {
         @include flex(center, center, column);
-    @media screen and (min-width: $screen-desktop) {
+    @media screen and (min-width: $screen-desktop-large) {
         @include flex(space-between, flex-start, row);
   }
     }
@@ -34,28 +39,25 @@
     }
     &__item {
         @include flex(center, center, column);
-        width: 100%;
+        width: 80%;
         @media screen and (min-width: $screen-desktop-large) {
             width: 30%;
           }
     }
     &__subtitle {
+        margin-bottom: 30px;
         font-family: $main-font;
-        @include text($H400, 700, $midnight-blue);
-        margin-bottom: 10px;
-        text-align: center;
-        @media screen and (min-width: $screen-desktop) {
-            text-align: left;
-          }
+        letter-spacing: 0.32px;
+        @include text($H300, 700, $black);
     }
     &__icon {
-        border: 1px solid $midnight-blue;
+        border: 1px solid $electric-blue;
         border-radius: 50%;
         cursor: pointer;
-        fill: $midnight-blue;
+        fill: $electric-blue;
         width: 70px;
         height: 70px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     
 }

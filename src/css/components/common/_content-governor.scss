@@ -5,7 +5,7 @@
   }
 
 &__aside-left {
-    @include flex(flex-start, center, column);
+    @include flex(flex-start, flex-start, column);
     width: 100%;
     margin-bottom: 50px;
     @media screen and (min-width: $screen-desktop) {
@@ -15,7 +15,7 @@
       }
 }
 &__aside-right {
-    @include flex(center, center, column);
+    @include flex(flex-start, flex-start, column);
     width: 100%;
     @media screen and (min-width: $screen-desktop) {
         width: 50%;
@@ -23,21 +23,18 @@
 }
 &__title {
     font-family: $main-font;
-    @include text($H400, 700, $midnight-blue);
-    margin-bottom: 50px;
-    text-align: center;
+    letter-spacing: 0.32px;
+    @include text($H300, 700, $black);
+    margin-bottom: 30px;
 }
 &__text:last-of-type {
     margin-bottom: 20px;
 }
 &__text {
-    font-family: $text-font;
-    @include text($H100, 400, $cool-gray);
-    line-height: 1.2;
-    text-align: center;
-    @media screen and (min-width: $screen-desktop) {
-        line-height: 2;
-      }
+    font-family: $main-font;
+        letter-spacing: 0.32px;
+        line-height: 20px;
+        @include text($H100, 400, $cool-gray);
 }
 &__list {
     @include flex(center, center, column);
@@ -48,7 +45,7 @@
 &__link {
     font-family: $text-font;
     text-align: center;
-    @include text($H200, 900, $electric-blue);
+    @include text($H100, 400, $electric-blue);
     background: white;
     transition: all 0.2s linear;
     &:hover {

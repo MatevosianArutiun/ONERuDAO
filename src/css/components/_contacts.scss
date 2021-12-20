@@ -7,4 +7,12 @@
     &__container {
         @include flex(center, center, column);
     }
+    &__title {
+        @media screen and (min-width: $screen-tablet) {
+            @include text($H600, 700, $black);
+          }
+        &::after {
+            width: 0px;
+          }
+    }
 }

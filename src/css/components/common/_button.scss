@@ -7,10 +7,10 @@
     text-transform: uppercase;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     display: inline-block;
-    @include text($H100, 900, $white);
+    @include text($H100, 600, $white);
     font-family: $main-font;
     transition: all 0.3s linear;
-    background-image: linear-gradient(45deg, rgba(27,41,94,1) 0%, rgba(105,250,189,1) 35%, rgba(0,174,233,1) 100%);
+    background-image: $linear-gradient;
   
     padding: 15px 30px;
   

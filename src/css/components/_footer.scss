@@ -1,0 +1,31 @@
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__container {
+        @include flex(center, center, column);
+    }
+    &__list {
+        @include flex(center, center, column);
+        @media screen and (min-width: $screen-desktop) {
+            @include flex(center, center, row);
+          }
+    }
+    &__item:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 10px;
+        @media screen and (min-width: $screen-desktop) {
+            margin-right: 50px;
+            margin-bottom: 0px;
+          }
+    }
+    &__link {
+        font-family: $main-font;
+        @include text($H100, 500, $cool-gray);
+        letter-spacing: 0.32px;
+        &:hover {
+            @include text($H100, 500, $electric-blue);
+        }
+    }
+}
+
+

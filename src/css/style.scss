@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,400;0,600;0,800;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
 
 
 // // Core
@@ -10,26 +10,30 @@
 // // Common components
 @import "./components/common/loader";
 @import "./components/common/menu";
+@import "./components/common/social";
 @import "./components/common/burger-menu";
 @import "./components/common/logo";
-@import "./components/common/scroll";
 @import "./components/common/title";
 @import "./components/common/button";
-@import "./components/common/social";
 @import "./components/common/form";
-@import "./components/common/content-governor";
+@import "./components/common/content-header";
 @import "./components/common/content-roadmap";
-@import "./components/common/content-mandates";
+@import "./components/common/content-governor";
 @import "./components/common/content-developers";
+@import "./components/common/content-mandates";
+
+
 
 
 // // Components
 @import "./components/navigation";
 @import "./components/header";
-@import "./components/governor";
 @import "./components/roadmap";
-@import "./components/mandates";
+@import "./components/governor";
 @import "./components/developers";
+@import "./components/mandates";
+@import "./components/characteristic";
 @import "./components/grants";
 @import "./components/sharding";
 @import "./components/contacts";
+@import "./components/footer";

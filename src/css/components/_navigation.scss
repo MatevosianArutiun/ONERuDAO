@@ -1,8 +1,11 @@
 .navigation {
+    border-bottom: 1px solid $cool-line;
+    border-top: 1px solid $cool-line;
     z-index: 2;
-    height: 10vh;
+    height: 60px;
+    background-color: $white;
     // background-color: rgba(166, 172, 181, 0.7);
-    background-image: linear-gradient(45deg, rgba(105,250,189,1) 0%, rgba(0,174,233,1) 35%, rgba(27,41,94,1) 100%);
+    // background-image: linear-gradient(45deg, rgba(105,250,189,1) 0%, rgba(0,174,233,1) 35%, rgba(27,41,94,1) 100%);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -14,6 +17,10 @@
     }
     &__list {
         margin-bottom: 0;
+        display: none;
+        @media screen and (min-width: $screen-tablet-small) {
+            @include flex(space-between, center, row);
+          }
     }
     &__navbar {
         background: none !important;
@@ -22,6 +29,9 @@
           }
     }
     &__link {
-        color: $white;
+        color: $cool-gray;
+    }
+    &__icon {
+        fill: $cool-gray;
     }
 }

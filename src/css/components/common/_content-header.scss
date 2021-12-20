@@ -1,0 +1,36 @@
+.content-header {
+    @include flex(center, center, column);
+    &__list {
+        @include flex(center, center, column);
+        @media screen and (min-width: $screen-desktop) {
+            @include flex(center, flex-start, row);
+          }
+    }
+    &__item {
+        width: 90%;
+        @media screen and (min-width: $screen-desktop) {
+            width: 30%;
+          }
+    }
+    &__item:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 50px;
+        @media screen and (min-width: $screen-desktop) {
+            margin-right: 50px;
+            margin-bottom: 0px;
+          }
+    }
+    &__title {
+        margin-bottom: 30px;
+        font-family: $main-font;
+        letter-spacing: 0.32px;
+        @include text($H300, 700, $black);
+
+    }
+    &__text {
+        font-family: $main-font;
+        letter-spacing: 0.32px;
+        line-height: 20px;
+        @include text($H100, 400, $cool-gray);
+    }
+}

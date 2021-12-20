@@ -1,22 +1,19 @@
 .logo {
     cursor: pointer;
-    @include flex(center, flex-end, row);
-    display: none;
-    @media screen and (min-width: $screen-tablet-small) {
-        @include flex(center, flex-end, row);
-      }
+    @include flex(center, center, row);
+    
     &__image {
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
         margin-right: 10px;
         transition: all 0.2s linear;
         @media screen and (min-width: $screen-tablet-small) {
-            width: 40px;
-            height: 40px;
+            width: 24px;
+            height: 24px;
           }
         @media screen and (min-width: $screen-tablet-large) {
-            width: 50px;
-            height: 50px;
+            width: 24px;
+            height: 24px;
           }
         // &:hover {
             
@@ -33,17 +30,11 @@
     }
     &__title {
         font-family: $main-font;
-        @include text($H200, 700, $white);
+        @include text($H100, 600, $midnight-blue);
         transition: all 0.2s linear;
-        display: none;
-        @media screen and (min-width: $screen-tablet-small) {
-            display: block;
-          }
         @media screen and (min-width: $screen-tablet-large) {
-            @include text($H400, 700, $white);
+            @include text($H100, 600, $midnight-blue);
           }
-        &:hover {
-            @include text($H400, 700, $mint-green);
-        }
+        
     }
 }
