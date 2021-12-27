@@ -8,15 +8,15 @@
 @import "./core/common";
 
 // // Common components
-@import "./components/common/loader";
 @import "./components/common/menu";
 @import "./components/common/social";
 @import "./components/common/burger-menu";
 @import "./components/common/logo";
+@import "./components/common/scroll";
 @import "./components/common/title";
 @import "./components/common/button";
 @import "./components/common/form";
-@import "./components/common/content-header";
+@import "./components/common/content-onerudao";
 @import "./components/common/content-roadmap";
 @import "./components/common/content-governor";
 @import "./components/common/content-developers";
@@ -28,6 +28,7 @@
 // // Components
 @import "./components/navigation";
 @import "./components/header";
+@import "./components/onerudao";
 @import "./components/roadmap";
 @import "./components/governor";
 @import "./components/developers";

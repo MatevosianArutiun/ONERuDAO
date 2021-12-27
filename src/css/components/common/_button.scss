@@ -1,29 +1,29 @@
 .button {
-    border-radius: 5px;
-    margin: 0 auto;
-    letter-spacing: 1.5px;
-    width: 200px;
-    text-align: center;
-    text-transform: uppercase;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    display: inline-block;
-    @include text($H100, 600, $white);
-    font-family: $main-font;
-    transition: all 0.3s linear;
-    background-image: $linear-gradient;
-  
-    padding: 15px 30px;
-  
-    @media screen and (min-width: $screen-desktop-large) {
-      &:hover {
-        background-color: $white;
-        color: $cool-gray;
-      }
-      &:active {
-        transform: scaleX(0.97) translateY(1px);
-      }
-      &__text {
-        display: block;
-      }
+  border-radius: 5px;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+  width: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  display: inline-block;
+  @include text($H100, 600, $white);
+  font-family: $main-font;
+  transition: all 0.3s linear;
+  background-image: $linear-gradient;
+
+  padding: 15px 30px;
+
+  @media screen and (min-width: $screen-desktop-large) {
+    &:hover {
+      background-color: $white;
+      color: $cool-gray;
+    }
+    &:active {
+      transform: scaleX(0.97) translateY(1px);
+    }
+    &__text {
+      display: block;
     }
   }
+}

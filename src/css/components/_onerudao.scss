@@ -1,0 +1,11 @@
+.section-onerudao {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(../images/governor_fon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__container {
+      @include flex(center, center, column);
+  }
+ 
+}

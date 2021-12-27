@@ -1,31 +1,29 @@
 .logo {
     cursor: pointer;
-    @include flex(center, center, row);
-    
+    &__link {
+        @include flex(center, center, row);
+    }
     &__image {
-        width: 24px;
-        height: 24px;
+        width: 40px;
+        height: 40px;
         margin-right: 10px;
         transition: all 0.2s linear;
-        @media screen and (min-width: $screen-tablet-small) {
-            width: 24px;
-            height: 24px;
-          }
+       
         @media screen and (min-width: $screen-tablet-large) {
-            width: 24px;
-            height: 24px;
+            width: 50px;
+            height: 50px;
           }
         // &:hover {
             
-        //     animation:move 3s linear infinite;
-        //     @keyframes move{
-        //         from {
-        //           transform:rotate3d(1,-1,0,0);
-        //         }
-        //         to {
-        //           transform:rotate3d(1,-5,0,360deg);
-        //         }
-        //       }
+            // animation:move 3s linear infinite;
+            // @keyframes move{
+            //     from {
+            //       transform:rotate3d(1,-1,0,0);
+            //     }
+            //     to {
+            //       transform:rotate3d(1,-5,0,360deg);
+            //     }
+            //   }
         // }
     }
     &__title {
